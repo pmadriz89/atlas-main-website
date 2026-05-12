@@ -27,7 +27,8 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealItems.forEach((item) => revealObserver.observe(item));
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
@@ -52,6 +53,6 @@ if (contactForm) {
 
     const subject = encodeURIComponent(`Atlas Service Group Consultation - ${service}`);
     const mailBody = encodeURIComponent(body);
-    window.location.href = `mailto:pmadriz@atlas-sg.com?cc=dgrimm@atlas-sg.com&subject=${subject}&body=${mailBody}`;
+    window.location.href = `mailto:admin@atlas-sg.com?subject=${subject}&body=${mailBody}`;
   });
 }

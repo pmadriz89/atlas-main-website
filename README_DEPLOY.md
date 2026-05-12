@@ -1,18 +1,26 @@
-# Atlas Service Group Website - Vercel Public Directory Version
+# Atlas Service Group Website — Revised Vercel Package
 
-This version is structured in the safest Vercel layout for a no-framework static site:
+## Upload structure
+Upload the contents of this folder to a GitHub repo. Your repo should show:
 
-- `public/index.html`
-- `public/styles.css`
-- `public/script.js`
-- `public/assets/`
-- root `vercel.json` forces Vercel to serve the `public` folder
+- public/
+- vercel.json
+- package.json
+- README_DEPLOY.md
 
-## Deploy settings in Vercel
+Do not upload the ZIP file itself.
 
-Framework Preset: Other
-Build Command: leave blank or use the default
-Output Directory: public
-Root Directory: leave blank
+## Vercel settings
+- Framework Preset: Other
+- Root Directory: leave blank
+- Build Command: leave blank
+- Output Directory: public
+- Install Command: leave blank
 
-Important: upload the CONTENTS of this folder to GitHub. Do not upload the `.zip` file itself.
+## Contact information used on site
+- admin@atlas-sg.com
+- 661-241-3034
+
+## Domain notes
+- atlas-sg.com and www.atlas-sg.com can point to this Vercel project.
+- rip.atlas-sg.com should stay pointed to the existing RIP app.
